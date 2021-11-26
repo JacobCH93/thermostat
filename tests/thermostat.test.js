@@ -8,12 +8,12 @@ describe ('thermostat',() => {
 
     it ('increaces temp',() => {
         const thermostat = new Thermostat();
-        thermostat.up
+        thermostat.getUp();
         expect(thermostat.getTemperature()).toBe (21);
     });
     it ('decreaces temp',() => {
         const thermostat = new Thermostat();
-        thermostat.down
+        thermostat.getDown();
         expect(thermostat.getTemperature()).toBe (19);
     });
     it ('returns min temp',() => {
@@ -28,7 +28,7 @@ describe ('thermostat',() => {
     it ('Cannot go over max temp',() => {
         const thermostat =  new Thermostat();
         thermostat.temp = thermostat.max;
-        thermostat.up;
+        thermostat.getUp();
         expect(thermostat.getTemperature()).toBe(32);
     }); 
     it ('Can turn off PSM',() => {
@@ -41,7 +41,7 @@ describe ('thermostat',() => {
     }); 
     it ('Reset to 20',() => {
         const thermostat =  new Thermostat();
-        thermostat.up
+        thermostat.getUp
         thermostat.reset
         expect(thermostat.getTemperature()).toBe(20);
     }); 

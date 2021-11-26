@@ -14,12 +14,12 @@ getMinTemp() {
     return this.mintemp;
 
 }
-get up() { if (this.psm == true && this.temp < this.maxpsm)
+getUp() { if (this.psm == true && this.temp < this.maxpsm)
     ++this.temp;
     else if (this.psm == false && this.temp < this.max) ++this.temp;
 }
 
-get down() { if (this.temp > this.mintemp) { 
+getDown() { if (this.temp > this.mintemp) { 
     --this.temp;
 }   
 }
