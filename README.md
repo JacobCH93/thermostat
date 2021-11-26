@@ -1,4 +1,4 @@
-##Project Creating a Thermostat
+## Project Creating a Thermostat
 
 ### By Jacob Hanrahan
 
